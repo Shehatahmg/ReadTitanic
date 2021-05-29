@@ -29,10 +29,10 @@ public class ReadMain {
             List<Object> passengers = df.col("Survived");
             System.out.println("Joinary survived column"+passengers);
             // Reading using TableSaw
-//            Table titanicData;
-//            titanicData = Table.read().file("F:\\Iti\\Foundation period\\Java & UML programming\\Lecs\\Day5\\tested.csv");
-//            System.out.println("Tablse saw data");
-//            System.out.println(titanicData.summary());
+            Table titanicData;
+            titanicData = Table.read().file("F:\\Iti\\Foundation period\\Java & UML programming\\Lecs\\Day5\\tested.csv");
+            System.out.println("Tablse saw data");
+            System.out.println(titanicData.summary());
         } catch (IOException ex) {
             Logger.getLogger(ReadMain.class.getName()).log(Level.SEVERE, null, ex);
         }
